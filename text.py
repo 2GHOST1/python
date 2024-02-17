@@ -30,6 +30,7 @@ response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 if response.status_code == 200:
     data = response.json()
     bitcoin_price = data['bpi']['USD']['rate']
-    print("Current Bitcoin Price (in USD):", bitcoin_price)
+    #print("Current Bitcoin Price (in USD):", bitcoin_price)
+    print("Changed")
 else:
     print("Failed to retrieve Bitcoin price. Status code:", response.status_code)
